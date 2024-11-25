@@ -1,7 +1,7 @@
 FROM  archlinux:latest
 
 # Install dependencies
-RUN	 pacman -Syyu --noconfirm base base-devel sudo openssh bash-completion nano git cmake clang make neovim
+RUN	 pacman -Syyu --noconfirm base base-devel sudo openssh bash-completion nano git cmake clang make neovim less
 
 # Generate host keys
 RUN  /usr/bin/ssh-keygen -A
