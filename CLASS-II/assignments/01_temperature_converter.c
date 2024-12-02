@@ -38,3 +38,4 @@ float formula(char scale, int temp) {
 
     return con_temp;
 }
+
