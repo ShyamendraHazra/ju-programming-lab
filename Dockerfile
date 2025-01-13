@@ -16,6 +16,8 @@ RUN  chown -R vscode:vscode /home/vscode/
 RUN  usermod -aG wheel vscode
 RUN	 echo 'vscode:shyamendra_user_code' | chpasswd
 
+USER vscode
+
 # Add password to root user
 RUN	 echo 'root:shyamendra_user_root' | chpasswd
 
