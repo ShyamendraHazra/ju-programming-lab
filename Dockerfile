@@ -26,5 +26,4 @@ RUN  sed -i -e 's/^#PasswordAuthentication yes/PasswordAuthentication no/g' /etc
 RUN  sed -i -e 's/^#PubkeyAuthentication yes/PubkeyAuthentication yes/g' /etc/ssh/sshd_config
 RUN  sed -i -e 's/^UsePAM yes/UsePAM no/g' /etc/ssh/sshd_config
 
-# Run openssh daemon
-CMD  ["/usr/sbin/sshd", "-D"]
+
